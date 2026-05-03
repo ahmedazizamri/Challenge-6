@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./Question.css";
 
 function Question({ obj, index }) {
   const [Open, setOpen] = useState(false);
@@ -13,7 +12,7 @@ function Question({ obj, index }) {
         <em>{obj.question}</em>
         <em>{Open ? "-" : "+"}</em>
       </div>
-      {Open ? <p>{obj.answer}</p> : <></>}
+      {Open && <p>{obj.answer}</p>}
     </div>
   );
 }

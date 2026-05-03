@@ -1,5 +1,4 @@
 import Question from "./Question";
-import "./Accordion.css";
 const items = [
   {
     id: 1,
